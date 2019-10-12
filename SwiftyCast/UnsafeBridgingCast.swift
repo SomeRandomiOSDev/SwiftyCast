@@ -1,0 +1,123 @@
+//
+//  UnsafeBridgingCast.swift
+//  SwiftyCast
+//
+//  Created by Joseph Newton on 10/12/19.
+//  Copyright © 2019 Some Random iOS Dev. All rights reserved.
+//
+
+// MARK: - Global Functions
+
+// Swift equivalent of (__bridge const void *)
+@inlinable
+public func unsafeBridgingCast<Object: AnyObject>(_ object: Object) -> UnsafeRawPointer {
+    return UnsafeRawPointer(Unmanaged<Object>.passUnretained(object).toOpaque())
+}
+
+@inlinable
+public func unsafeBridgingCast<Object: AnyObject>(_ object: Object?) -> UnsafeRawPointer? {
+    let pointer: UnsafeRawPointer?
+
+    if let object = object {
+        pointer = UnsafeRawPointer(Unmanaged<Object>.passUnretained(object).toOpaque())
+    } else {
+        pointer = nil
+    }
+
+    return pointer
+}
+
+// Swift equivalent of (__bridge Object *)
+@inlinable
+public func unsafeBridgingCast<Object: AnyObject>(_ pointer: UnsafeRawPointer) -> Object {
+    return Unmanaged<Object>.fromOpaque(pointer).takeUnretainedValue()
+}
+
+@inlinable
+public func unsafeBridgingCast<Object: AnyObject>(_ pointer: UnsafeRawPointer?) -> Object? {
+    let object: Object?
+
+    if let pointer = pointer {
+        object = Unmanaged<Object>.fromOpaque(pointer).takeUnretainedValue()
+    } else {
+        object = nil
+    }
+
+    return object
+}
+
+// Swift equivalent of (__bridge_retain const void *)
+@inlinable
+public func unsafeBridgingRetain<Object: AnyObject>(_ object: Object) -> UnsafeRawPointer {
+    return UnsafeRawPointer(Unmanaged<Object>.passRetained(object).toOpaque())
+}
+
+@inlinable
+public func unsafeBridgingRetain<Object: AnyObject>(_ object: Object?) -> UnsafeRawPointer? {
+    let pointer: UnsafeRawPointer?
+
+    if let object = object {
+        pointer = UnsafeRawPointer(Unmanaged<Object>.passRetained(object).toOpaque())
+    } else {
+        pointer = nil
+    }
+
+    return pointer
+}
+
+// Swift equivalent of (__bridge_transfer Object *)
+@inlinable
+public func unsafeBridgingRelease<Object: AnyObject>(_ pointer: UnsafeRawPointer) -> Object {
+    return Unmanaged<Object>.fromOpaque(pointer).takeRetainedValue()
+}
+
+@inlinable
+public func unsafeBridgingRelease<Object: AnyObject>(_ pointer: UnsafeRawPointer?) -> Object? {
+    let object: Object?
+
+    if let pointer = pointer {
+        object = Unmanaged<Object>.fromOpaque(pointer).takeRetainedValue()
+    } else {
+        object = nil
+    }
+
+    return object
+}
+
+// Swift equivalent of (__bridge const void *)
+@inlinable
+public func withUnsafeBridgingCast<Object: AnyObject, R>(_ object: Object, body: (UnsafeRawPointer) throws -> R) rethrows -> R {
+    return try body(UnsafeRawPointer(Unmanaged<Object>.passUnretained(object).toOpaque()))
+}
+
+@inlinable
+public func withUnsafeBridgingCast<Object: AnyObject, R>(_ object: Object?, body: (UnsafeRawPointer?) throws -> R) rethrows -> R {
+    let result: R
+
+    if let object = object {
+        result = try body(UnsafeRawPointer(Unmanaged<Object>.passUnretained(object).toOpaque()))
+    } else {
+        result = try body(nil)
+    }
+
+    return result
+}
+
+// Swift equivalent of (__bridge Object *)
+@inlinable
+public func withUnsafeBridgingCast<Object: AnyObject, R>(_ pointer: UnsafeRawPointer, body: (Object) throws -> R) rethrows -> R {
+    return try body(Unmanaged<Object>.fromOpaque(pointer).takeUnretainedValue())
+}
+
+@inlinable
+public func withUnsafeBridgingCast<Object: AnyObject, R>(_ pointer: UnsafeRawPointer?, body: (Object?) throws -> R) rethrows -> R {
+    let result: R
+
+    if let pointer = pointer {
+        result = try body(Unmanaged<Object>.fromOpaque(pointer).takeUnretainedValue())
+    } else {
+        result = try body(nil)
+    }
+
+    return result
+}
