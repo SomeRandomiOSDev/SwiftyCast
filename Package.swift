@@ -12,7 +12,7 @@ let package = Package(
     ],
 
     products: [
-        .library(name: "SwiftyCast", targets: ["SwiftyCast"])
+        .library(name: "SwiftyCast", type: .static, targets: ["SwiftyCast"])
     ],
 
     targets: [
