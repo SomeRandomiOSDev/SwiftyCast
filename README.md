@@ -56,7 +56,7 @@ unsafeBridgingRetain(_:)
 unsafeBridgingRetain(_:)
 
 // For casting to or from a raw pointer but only in the context of a callback block
-withUnsafeBridgingRetain(_:body:)
+withUnsafeBridgingCast(_:body:)
 ```
 
 Contributing
