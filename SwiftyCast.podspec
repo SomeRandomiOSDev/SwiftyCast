@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   
   s.name         = "SwiftyCast"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "Object to UnsafeRawPointer Casting"
   s.description  = <<-DESC
                    A lightweight framework for easily casting objects to and from UnsafeRawPointer types in iOS, macOS, tvOS, and watchOS.
