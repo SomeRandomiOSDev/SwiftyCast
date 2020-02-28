@@ -60,6 +60,10 @@ opt_in_rules:
 
 reporter: "xcode"
 
+excluded:
+  - Tests/LinuxMain.swift
+  - Tests/SwiftyCastTests/XCTestManifests.swift
+
 identifier_name:
   excluded:
     - i

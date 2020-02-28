@@ -2,8 +2,7 @@
 //  SwiftyCastTests.swift
 //  SwiftyCastTests
 //
-//  Created by Joseph Newton on 10/12/19.
-//  Copyright © 2019 SomeRandomiOSDev. All rights reserved.
+//  Copyright © 2020 SomeRandomiOSDev. All rights reserved.
 //
 
 import SwiftyCast
@@ -126,4 +125,12 @@ class SwiftyCastTests: XCTestCase {
             }
         }
     }
+
+    // MARK: Private Methods
+
+    #if os(Linux)
+    private func autoreleasepool<Result>(invoking body: () throws -> Result) rethrows -> Result {
+        return try body()
+    }
+    #endif
 }

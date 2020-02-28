@@ -2,3 +2,5 @@ SwiftyCast.xcodeproj/project.xcworkspace
 SwiftyCast.xcodeproj/xcuserdata
 .build
 .swiftpm
+.swift-version
+gyb.pyc
