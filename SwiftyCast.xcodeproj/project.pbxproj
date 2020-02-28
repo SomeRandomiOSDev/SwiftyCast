@@ -18,19 +18,30 @@
 			name = "Run SwiftLint";
 			productName = "Run SwiftLint";
 		};
+		DDB1DEED2409797B00C20FED /* Generate Sources */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = DDB1DEEE2409797B00C20FED /* Build configuration list for PBXAggregateTarget "Generate Sources" */;
+			buildPhases = (
+				DDB1DEF12409798D00C20FED /* Generate Sources */,
+			);
+			dependencies = (
+			);
+			name = "Generate Sources";
+			productName = "Generate Sources";
+		};
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
 		DD414C02235224620043E047 /* SwiftyCast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD414BF8235224620043E047 /* SwiftyCast.framework */; };
-		DD414C07235224620043E047 /* SwiftyCastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD414C06235224620043E047 /* SwiftyCastTests.swift */; };
-		DD414C15235224D90043E047 /* UnsafeBridgingCast.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD414C14235224D90043E047 /* UnsafeBridgingCast.swift */; };
 		DD414C3123522DB90043E047 /* SwiftyCast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD414C2823522DB90043E047 /* SwiftyCast.framework */; };
 		DD414C4D23522DDF0043E047 /* SwiftyCast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD414C4423522DDF0043E047 /* SwiftyCast.framework */; };
-		DD414C6823522E070043E047 /* UnsafeBridgingCast.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD414C14235224D90043E047 /* UnsafeBridgingCast.swift */; };
-		DD414C6923522E080043E047 /* UnsafeBridgingCast.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD414C14235224D90043E047 /* UnsafeBridgingCast.swift */; };
-		DD414C6A23522E080043E047 /* UnsafeBridgingCast.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD414C14235224D90043E047 /* UnsafeBridgingCast.swift */; };
-		DD414C6B23522E0C0043E047 /* SwiftyCastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD414C06235224620043E047 /* SwiftyCastTests.swift */; };
-		DD414C6C23522E0D0043E047 /* SwiftyCastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD414C06235224620043E047 /* SwiftyCastTests.swift */; };
+		DDB1DED82409773E00C20FED /* UnsafeBridgingCast.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB1DED72409773E00C20FED /* UnsafeBridgingCast.swift */; };
+		DDB1DED92409773E00C20FED /* UnsafeBridgingCast.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB1DED72409773E00C20FED /* UnsafeBridgingCast.swift */; };
+		DDB1DEDA2409773E00C20FED /* UnsafeBridgingCast.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB1DED72409773E00C20FED /* UnsafeBridgingCast.swift */; };
+		DDB1DEDB2409773E00C20FED /* UnsafeBridgingCast.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB1DED72409773E00C20FED /* UnsafeBridgingCast.swift */; };
+		DDB1DEE02409776700C20FED /* SwiftyCastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB1DEDF2409776700C20FED /* SwiftyCastTests.swift */; };
+		DDB1DEE12409776700C20FED /* SwiftyCastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB1DEDF2409776700C20FED /* SwiftyCastTests.swift */; };
+		DDB1DEE22409776700C20FED /* SwiftyCastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB1DEDF2409776700C20FED /* SwiftyCastTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,15 +94,39 @@
 			remoteGlobalIDString = DD414C1C23522CE00043E047;
 			remoteInfo = "Run SwiftLint";
 		};
+		DDB1DEF224097A0100C20FED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD414BEF235224620043E047 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDB1DEED2409797B00C20FED;
+			remoteInfo = "Generate Sources";
+		};
+		DDB1DEF424097A0500C20FED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD414BEF235224620043E047 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDB1DEED2409797B00C20FED;
+			remoteInfo = "Generate Sources";
+		};
+		DDB1DEF624097A0800C20FED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD414BEF235224620043E047 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDB1DEED2409797B00C20FED;
+			remoteInfo = "Generate Sources";
+		};
+		DDB1DEF824097A0B00C20FED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD414BEF235224620043E047 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDB1DEED2409797B00C20FED;
+			remoteInfo = "Generate Sources";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		DD414BF8235224620043E047 /* SwiftyCast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyCast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DD414BFC235224620043E047 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD414C01235224620043E047 /* SwiftyCastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyCastTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DD414C06235224620043E047 /* SwiftyCastTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyCastTests.swift; sourceTree = "<group>"; };
-		DD414C08235224620043E047 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DD414C14235224D90043E047 /* UnsafeBridgingCast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnsafeBridgingCast.swift; sourceTree = "<group>"; };
 		DD414C16235225600043E047 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
 		DD414C17235225600043E047 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = SOURCE_ROOT; };
 		DD414C18235225610043E047 /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = SOURCE_ROOT; };
@@ -103,6 +138,14 @@
 		DD414C4423522DDF0043E047 /* SwiftyCast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyCast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD414C4C23522DDF0043E047 /* SwiftyCast tvOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftyCast tvOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD414C6023522DF30043E047 /* SwiftyCast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyCast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDB1DED72409773E00C20FED /* UnsafeBridgingCast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnsafeBridgingCast.swift; sourceTree = "<group>"; };
+		DDB1DEDF2409776700C20FED /* SwiftyCastTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyCastTests.swift; sourceTree = "<group>"; };
+		DDB1DEE32409778400C20FED /* SwiftyCastTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SwiftyCastTests-Info.plist"; path = "Plists/SwiftyCastTests-Info.plist"; sourceTree = "<group>"; };
+		DDB1DEE42409778400C20FED /* SwiftyCast-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SwiftyCast-Info.plist"; path = "Plists/SwiftyCast-Info.plist"; sourceTree = "<group>"; };
+		DDB1DEE52409785A00C20FED /* Package@swift-4.0.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Package@swift-4.0.swift"; sourceTree = "<group>"; };
+		DDB1DEE62409785A00C20FED /* Package@swift-4.2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Package@swift-4.2.swift"; sourceTree = "<group>"; };
+		DDB1DEFB24097A3E00C20FED /* UnsafeBridgingCast.swift.gyb */ = {isa = PBXFileReference; explicitFileType = text.script.python; path = UnsafeBridgingCast.swift.gyb; sourceTree = "<group>"; };
+		DDB1DEFD2409903000C20FED /* ATTRIBUTIONS */ = {isa = PBXFileReference; lastKnownFileType = text; path = ATTRIBUTIONS; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,7 +208,6 @@
 			isa = PBXGroup;
 			children = (
 				DD414BFA235224620043E047 /* SwiftyCast */,
-				DD414C05235224620043E047 /* SwiftyCastTests */,
 				DD414BF9235224620043E047 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -187,19 +229,11 @@
 		DD414BFA235224620043E047 /* SwiftyCast */ = {
 			isa = PBXGroup;
 			children = (
-				DD414C13235224B70043E047 /* Source Files */,
+				DDB1DED52409771500C20FED /* Sources */,
 				DD414C12235224A30043E047 /* Supporting Files */,
+				DDB1DEDD2409776700C20FED /* Tests */,
 			);
-			path = SwiftyCast;
-			sourceTree = "<group>";
-		};
-		DD414C05235224620043E047 /* SwiftyCastTests */ = {
-			isa = PBXGroup;
-			children = (
-				DD414C06235224620043E047 /* SwiftyCastTests.swift */,
-				DD414C08235224620043E047 /* Info.plist */,
-			);
-			path = SwiftyCastTests;
+			name = SwiftyCast;
 			sourceTree = "<group>";
 		};
 		DD414C12235224A30043E047 /* Supporting Files */ = {
@@ -207,21 +241,50 @@
 			children = (
 				DD414C19235225610043E047 /* SwiftyCast.podspec */,
 				DD414C1B235225610043E047 /* Package.swift */,
+				DDB1DEE62409785A00C20FED /* Package@swift-4.2.swift */,
+				DDB1DEE52409785A00C20FED /* Package@swift-4.0.swift */,
 				DD414C17235225600043E047 /* .swiftlint.yml */,
 				DD414C18235225610043E047 /* .travis.yml */,
 				DD414C16235225600043E047 /* LICENSE */,
 				DD414C1A235225610043E047 /* README.md */,
-				DD414BFC235224620043E047 /* Info.plist */,
+				DDB1DEFD2409903000C20FED /* ATTRIBUTIONS */,
+				DDB1DEE42409778400C20FED /* SwiftyCast-Info.plist */,
+				DDB1DEE32409778400C20FED /* SwiftyCastTests-Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		DD414C13235224B70043E047 /* Source Files */ = {
+		DDB1DED52409771500C20FED /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				DD414C14235224D90043E047 /* UnsafeBridgingCast.swift */,
+				DDB1DED62409772200C20FED /* SwiftyCast */,
 			);
-			name = "Source Files";
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		DDB1DED62409772200C20FED /* SwiftyCast */ = {
+			isa = PBXGroup;
+			children = (
+				DDB1DED72409773E00C20FED /* UnsafeBridgingCast.swift */,
+				DDB1DEFB24097A3E00C20FED /* UnsafeBridgingCast.swift.gyb */,
+			);
+			path = SwiftyCast;
+			sourceTree = "<group>";
+		};
+		DDB1DEDD2409776700C20FED /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DDB1DEDE2409776700C20FED /* SwiftyCastTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		DDB1DEDE2409776700C20FED /* SwiftyCastTests */ = {
+			isa = PBXGroup;
+			children = (
+				DDB1DEDF2409776700C20FED /* SwiftyCastTests.swift */,
+			);
+			path = SwiftyCastTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +333,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				DDB1DEF324097A0100C20FED /* PBXTargetDependency */,
 				DD414C2223522D040043E047 /* PBXTargetDependency */,
 			);
 			name = SwiftyCast;
@@ -307,6 +371,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				DDB1DEF524097A0500C20FED /* PBXTargetDependency */,
 				DD414C6E23522E170043E047 /* PBXTargetDependency */,
 			);
 			name = "SwiftyCast macOS";
@@ -344,6 +409,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				DDB1DEF724097A0800C20FED /* PBXTargetDependency */,
 				DD414C7023522E1C0043E047 /* PBXTargetDependency */,
 			);
 			name = "SwiftyCast tvOS";
@@ -381,6 +447,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				DDB1DEF924097A0B00C20FED /* PBXTargetDependency */,
 				DD414C7223522E230043E047 /* PBXTargetDependency */,
 			);
 			name = "SwiftyCast watchOS";
@@ -423,6 +490,9 @@
 					DD414C5F23522DF30043E047 = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
+					DDB1DEED2409797B00C20FED = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
 				};
 			};
 			buildConfigurationList = DD414BF2235224620043E047 /* Build configuration list for PBXProject "SwiftyCast" */;
@@ -431,6 +501,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = DD414BEE235224620043E047;
 			productRefGroup = DD414BF9235224620043E047 /* Products */;
@@ -444,6 +515,7 @@
 				DD414C4323522DDF0043E047 /* SwiftyCast tvOS */,
 				DD414C4B23522DDF0043E047 /* SwiftyCast tvOS Tests */,
 				DD414C5F23522DF30043E047 /* SwiftyCast watchOS */,
+				DDB1DEED2409797B00C20FED /* Generate Sources */,
 				DD414C1C23522CE00043E047 /* Run SwiftLint */,
 			);
 		};
@@ -520,6 +592,26 @@
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
+		DDB1DEF12409798D00C20FED /* Generate Sources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Sources/SwiftyCast/UnsafeBridgingCast.swift.gyb",
+			);
+			name = "Generate Sources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(SRCROOT)/Sources/SwiftyCast/UnsafeBridgingCast.swift",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./utils/gyb --line-directive '' -o ./Sources/SwiftyCast/UnsafeBridgingCast.swift ./Sources/SwiftyCast/UnsafeBridgingCast.swift.gyb\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -527,7 +619,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD414C15235224D90043E047 /* UnsafeBridgingCast.swift in Sources */,
+				DDB1DED82409773E00C20FED /* UnsafeBridgingCast.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,7 +627,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD414C07235224620043E047 /* SwiftyCastTests.swift in Sources */,
+				DDB1DEE02409776700C20FED /* SwiftyCastTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -543,7 +635,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD414C6823522E070043E047 /* UnsafeBridgingCast.swift in Sources */,
+				DDB1DED92409773E00C20FED /* UnsafeBridgingCast.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -551,7 +643,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD414C6B23522E0C0043E047 /* SwiftyCastTests.swift in Sources */,
+				DDB1DEE12409776700C20FED /* SwiftyCastTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -559,7 +651,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD414C6923522E080043E047 /* UnsafeBridgingCast.swift in Sources */,
+				DDB1DEDA2409773E00C20FED /* UnsafeBridgingCast.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -567,7 +659,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD414C6C23522E0D0043E047 /* SwiftyCastTests.swift in Sources */,
+				DDB1DEE22409776700C20FED /* SwiftyCastTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,7 +667,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD414C6A23522E080043E047 /* UnsafeBridgingCast.swift in Sources */,
+				DDB1DEDB2409773E00C20FED /* UnsafeBridgingCast.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -616,6 +708,26 @@
 			isa = PBXTargetDependency;
 			target = DD414C1C23522CE00043E047 /* Run SwiftLint */;
 			targetProxy = DD414C7123522E230043E047 /* PBXContainerItemProxy */;
+		};
+		DDB1DEF324097A0100C20FED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDB1DEED2409797B00C20FED /* Generate Sources */;
+			targetProxy = DDB1DEF224097A0100C20FED /* PBXContainerItemProxy */;
+		};
+		DDB1DEF524097A0500C20FED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDB1DEED2409797B00C20FED /* Generate Sources */;
+			targetProxy = DDB1DEF424097A0500C20FED /* PBXContainerItemProxy */;
+		};
+		DDB1DEF724097A0800C20FED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDB1DEED2409797B00C20FED /* Generate Sources */;
+			targetProxy = DDB1DEF624097A0800C20FED /* PBXContainerItemProxy */;
+		};
+		DDB1DEF924097A0B00C20FED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDB1DEED2409797B00C20FED /* Generate Sources */;
+			targetProxy = DDB1DEF824097A0B00C20FED /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -752,7 +864,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SwiftyCast/Info.plist;
+				INFOPLIST_FILE = "Plists/SwiftyCast-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -779,7 +891,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SwiftyCast/Info.plist;
+				INFOPLIST_FILE = "Plists/SwiftyCast-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -800,7 +912,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SwiftyCastTests/Info.plist;
+				INFOPLIST_FILE = "Plists/SwiftyCastTests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -818,7 +930,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SwiftyCastTests/Info.plist;
+				INFOPLIST_FILE = "Plists/SwiftyCastTests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -858,7 +970,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = SwiftyCast/Info.plist;
+				INFOPLIST_FILE = "Plists/SwiftyCast-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -886,7 +998,7 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_VERSION = A;
-				INFOPLIST_FILE = SwiftyCast/Info.plist;
+				INFOPLIST_FILE = "Plists/SwiftyCast-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -910,7 +1022,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = SwiftyCastTests/Info.plist;
+				INFOPLIST_FILE = "Plists/SwiftyCastTests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -931,7 +1043,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = SwiftyCastTests/Info.plist;
+				INFOPLIST_FILE = "Plists/SwiftyCastTests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -954,7 +1066,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SwiftyCast/Info.plist;
+				INFOPLIST_FILE = "Plists/SwiftyCast-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -981,7 +1093,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SwiftyCast/Info.plist;
+				INFOPLIST_FILE = "Plists/SwiftyCast-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1004,7 +1116,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SwiftyCastTests/Info.plist;
+				INFOPLIST_FILE = "Plists/SwiftyCastTests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1024,7 +1136,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SwiftyCastTests/Info.plist;
+				INFOPLIST_FILE = "Plists/SwiftyCastTests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1049,7 +1161,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SwiftyCast/Info.plist;
+				INFOPLIST_FILE = "Plists/SwiftyCast-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1077,7 +1189,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SwiftyCast/Info.plist;
+				INFOPLIST_FILE = "Plists/SwiftyCast-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1092,6 +1204,22 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 5.2;
+			};
+			name = Release;
+		};
+		DDB1DEEF2409797B00C20FED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DDB1DEF02409797B00C20FED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -1175,6 +1303,15 @@
 			buildConfigurations = (
 				DD414C6623522DF30043E047 /* Debug */,
 				DD414C6723522DF30043E047 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDB1DEEE2409797B00C20FED /* Build configuration list for PBXAggregateTarget "Generate Sources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDB1DEEF2409797B00C20FED /* Debug */,
+				DDB1DEF02409797B00C20FED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
