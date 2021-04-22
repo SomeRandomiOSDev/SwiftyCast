@@ -54,7 +54,7 @@ unsafeBridgingCast(_:)
 unsafeBridgingRetain(_:)
 
 // For casting from a raw pointer while decrementing the retain count of the object
-unsafeBridgingRetain(_:)
+unsafeBridgingRelease(_:)
 
 // For casting to or from a raw pointer but only in the context of a callback block
 withUnsafeBridgingCast(_:body:)
