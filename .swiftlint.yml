@@ -29,7 +29,6 @@ opt_in_rules:
   - vertical_parameter_alignment_on_call
   - pattern_matching_keywords
   - fatal_error_message
-  - implicit_return
   - implicitly_unwrapped_optional
   - joined_default_parameter
   - let_var_whitespace
