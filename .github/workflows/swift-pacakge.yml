@@ -36,10 +36,16 @@ jobs:
       run: |
         swift test -v --enable-code-coverage
 
+    - name: Generate Code Coverage File
+      if: ${{ runner.os == 'macOS' && github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+      run: |
+        xcrun llvm-cov export --instr-profile=.build/debug/codecov/default.profdata .build/debug/SwiftyCastPackageTests.xctest/Contents/MacOS/SwiftyCastPackageTests > ./codecov.lcov
+
     - name: Upload Code Coverage
       if: ${{ runner.os == 'macOS' && github.event_name == 'push' && github.ref == 'refs/heads/main' }}
       uses: codecov/codecov-action@v2
       with:
         token: ${{ secrets.CODECOV_TOKEN }}
-        files: .build/debug/codecov/SwiftyCast.json
+        file: ./codecov.lcov
         verbose: true
+
