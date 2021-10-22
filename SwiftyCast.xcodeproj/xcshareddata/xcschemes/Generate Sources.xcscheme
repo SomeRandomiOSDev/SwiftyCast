@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DD86D56423D11C4B0046E63E"
-               BuildableName = "Run SwiftLint"
-               BlueprintName = "Run SwiftLint"
+               BlueprintIdentifier = "DD7E9177272256FD0092BB79"
+               BuildableName = "Generate Sources"
+               BlueprintName = "Generate Sources"
                ReferencedContainer = "container:SwiftyCast.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -50,9 +50,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DD86D56423D11C4B0046E63E"
-            BuildableName = "Run SwiftLint"
-            BlueprintName = "Run SwiftLint"
+            BlueprintIdentifier = "DD7E9177272256FD0092BB79"
+            BuildableName = "Generate Sources"
+            BlueprintName = "Generate Sources"
             ReferencedContainer = "container:SwiftyCast.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
