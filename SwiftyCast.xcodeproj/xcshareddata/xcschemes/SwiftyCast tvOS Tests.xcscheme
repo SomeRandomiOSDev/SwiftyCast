@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1020"
-   version = "1.3">
+   LastUpgradeVersion = "1300"
+   version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
@@ -16,19 +16,25 @@
       <CodeCoverageTargets>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "DD414C4323522DDF0043E047"
+            BlueprintIdentifier = "DD86D58B23D11CA00046E63E"
             BuildableName = "SwiftyCast.framework"
             BlueprintName = "SwiftyCast tvOS"
             ReferencedContainer = "container:SwiftyCast.xcodeproj">
          </BuildableReference>
       </CodeCoverageTargets>
+      <TestPlans>
+         <TestPlanReference
+            reference = "container:Tests/Test Plans/SwiftyCast tvOS Tests.xctestplan"
+            default = "YES">
+         </TestPlanReference>
+      </TestPlans>
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DD414C4B23522DDF0043E047"
-               BuildableName = "SwiftyCast tvOS Tests.xctest"
+               BlueprintIdentifier = "DD86D59323D11CA00046E63E"
+               BuildableName = "SwiftyCastTests.xctest"
                BlueprintName = "SwiftyCast tvOS Tests"
                ReferencedContainer = "container:SwiftyCast.xcodeproj">
             </BuildableReference>

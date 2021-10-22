@@ -1,14 +1,18 @@
 SwiftyCast
 ========
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d30d31c29f17449481b97a04610ff5b9)](https://app.codacy.com/app/SomeRandomiOSDev/SwiftyCast?utm_source=github.com&utm_medium=referral&utm_content=SomeRandomiOSDev/SwiftyCast&utm_campaign=Badge_Grade_Dashboard)
 [![License MIT](https://img.shields.io/cocoapods/l/SwiftyCast.svg)](https://cocoapods.org/pods/SwiftyCast)
 [![CocoaPods Compatible](https://img.shields.io/cocoapods/v/SwiftyCast.svg)](https://cocoapods.org/pods/SwiftyCast) 
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) 
 [![Platform](https://img.shields.io/cocoapods/p/SwiftyCast.svg)](https://cocoapods.org/pods/SwiftyCast)
 ![Linux](https://img.shields.io/badge/platform-linux-lightgrey)
-[![Build](https://travis-ci.com/SomeRandomiOSDev/SwiftyCast.svg?branch=master)](https://travis-ci.com/SomeRandomiOSDev/SwiftyCast)
 [![Code Coverage](https://codecov.io/gh/SomeRandomiOSDev/SwiftyCast/branch/master/graph/badge.svg)](https://codecov.io/gh/SomeRandomiOSDev/SwiftyCast)
-[![Codacy](https://api.codacy.com/project/badge/Grade/8ad52c117e4a46d9aa4699d22fc0bf49)](https://app.codacy.com/app/SomeRandomiOSDev/SwiftyCast?utm_source=github.com&utm_medium=referral&utm_content=SomeRandomiOSDev/SwiftyCast&utm_campaign=Badge_Grade_Dashboard)
+
+![Swift Package](https://github.com/SomeRandomiOSDev/SwiftyCast/workflows/Swift%20Package/badge.svg)
+![Xcode Project](https://github.com/SomeRandomiOSDev/SwiftyCast/workflows/Xcode%20Project/badge.svg)
+![Cocoapods](https://github.com/SomeRandomiOSDev/SwiftyCast/workflows/Cocoapods/badge.svg)
+![Carthage](https://github.com/SomeRandomiOSDev/SwiftyCast/workflows/Carthage/badge.svg)
 
 **SwiftyCast** is a lightweight framework for easily casting objects to an from `UnsafeRawPointer` types for iOS, macOS, tvOS, and watchOS.
 
@@ -68,7 +72,7 @@ If you have need for a specific feature or you encounter a bug, please open an i
 Author
 --------
 
-Joseph Newton, somerandomiosdev@gmail.com 
+Joe Newton, somerandomiosdev@gmail.com
 
 License
 --------
