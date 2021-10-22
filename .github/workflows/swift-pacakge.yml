@@ -39,7 +39,7 @@ jobs:
     - name: Generate Code Coverage File
       if: ${{ runner.os == 'macOS' && github.event_name == 'push' && github.ref == 'refs/heads/main' }}
       run: |
-        xcrun llvm-cov export --instr-profile=.build/debug/codecov/default.profdata .build/debug/SwiftyCastPackageTests.xctest/Contents/MacOS/SwiftyCastPackageTests > ./codecov.lcov
+        xcrun llvm-cov export --format=lcov --instr-profile=.build/debug/codecov/default.profdata .build/debug/SwiftyCastPackageTests.xctest/Contents/MacOS/SwiftyCastPackageTests > ./codecov.lcov
 
     - name: Upload Code Coverage
       if: ${{ runner.os == 'macOS' && github.event_name == 'push' && github.ref == 'refs/heads/main' }}
